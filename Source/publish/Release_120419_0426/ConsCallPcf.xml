@@ -1,0 +1,416 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ConsCallPcf
+</name>
+</assembly>
+<members>
+<member name="T:ConsCallPcf.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ConsCallPcf.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ConsCallPcf.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.MessageService">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.#ctor">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.EmailServiceModel.MessageService.TestingWSCompleted">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.EmailServiceModel.MessageService.SendSMSCompleted">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.EmailServiceModel.MessageService.SendEmailCompleted">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.EmailServiceModel.MessageService.SendEmailMamiCompleted">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.EmailServiceModel.MessageService.SendEmailImageCompleted">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.EmailServiceModel.MessageService.SendNotificationCompleted">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.TestingWS(ConsCallPcf.EmailServiceModel.TestingContract,ConsCallPcf.EmailServiceModel.TestingResultContract@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.TestingWSAsync(ConsCallPcf.EmailServiceModel.TestingContract,ConsCallPcf.EmailServiceModel.TestingResultContract)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.TestingWSAsync(ConsCallPcf.EmailServiceModel.TestingContract,ConsCallPcf.EmailServiceModel.TestingResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendSMS(ConsCallPcf.EmailServiceModel.SmsKeyContract,ConsCallPcf.EmailServiceModel.SmsResultContract@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendSMSAsync(ConsCallPcf.EmailServiceModel.SmsKeyContract,ConsCallPcf.EmailServiceModel.SmsResultContract)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendSMSAsync(ConsCallPcf.EmailServiceModel.SmsKeyContract,ConsCallPcf.EmailServiceModel.SmsResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmail(ConsCallPcf.EmailServiceModel.EmailContract,ConsCallPcf.EmailServiceModel.EmailResultContract@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailAsync(ConsCallPcf.EmailServiceModel.EmailContract,ConsCallPcf.EmailServiceModel.EmailResultContract)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailAsync(ConsCallPcf.EmailServiceModel.EmailContract,ConsCallPcf.EmailServiceModel.EmailResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailMami(ConsCallPcf.EmailServiceModel.EmailMamiContract,ConsCallPcf.EmailServiceModel.EmailResultContract@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailMamiAsync(ConsCallPcf.EmailServiceModel.EmailMamiContract,ConsCallPcf.EmailServiceModel.EmailResultContract)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailMamiAsync(ConsCallPcf.EmailServiceModel.EmailMamiContract,ConsCallPcf.EmailServiceModel.EmailResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailImage(ConsCallPcf.EmailServiceModel.EmailImageContract,ConsCallPcf.EmailServiceModel.EmailResultContract@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailImageAsync(ConsCallPcf.EmailServiceModel.EmailImageContract,ConsCallPcf.EmailServiceModel.EmailResultContract)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendEmailImageAsync(ConsCallPcf.EmailServiceModel.EmailImageContract,ConsCallPcf.EmailServiceModel.EmailResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendNotification(ConsCallPcf.EmailServiceModel.NotificationContract,ConsCallPcf.EmailServiceModel.NotificationResultContract@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendNotificationAsync(ConsCallPcf.EmailServiceModel.NotificationContract,ConsCallPcf.EmailServiceModel.NotificationResultContract)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.SendNotificationAsync(ConsCallPcf.EmailServiceModel.NotificationContract,ConsCallPcf.EmailServiceModel.NotificationResultContract,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.EmailServiceModel.MessageService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.TestingContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.TestingContract.Input">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.NotificationResultContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.NotificationResultContract.DetailTrans">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.NotificationResultContract.RespondCode">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.NotificationResultContract.Status">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.NotificationContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.NotificationContract.ActionID">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.NotificationContract.Param">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.GetEmailImageContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.GetEmailImageContract.ImageLocation">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.GetEmailImageContract.ImageName">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.EmailImageContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.AttachmentFile">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.CcRecipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.ImageList">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.Message">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.Recipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.Sender">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.Subject">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailImageContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.EmailMamiContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.AttachmentFile">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.CcRecipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.MessageID">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.Param">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.Recipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.Sender">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.Subject">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailMamiContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.EmailResultContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailResultContract.Status">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.EmailContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.AttachmentFile">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.CcRecipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.Message">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.Recipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.Sender">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.Subject">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.EmailContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SmsResultContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SmsResultContract.Status">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SmsResultContract.TrxId">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SmsKeyContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SmsKeyContract.Message">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SmsKeyContract.Recipient">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SmsKeyContract.Vendor">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SmsKeyContract.WorkArea">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.BusinessErrorVo">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.BusinessErrorVo.ErrorCode">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.BusinessErrorVo.ErrorField">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.BusinessErrorVo.ErrorMessages">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.ArrayOfKeyValueOfstringstringKeyValueOfstringstring">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.ArrayOfKeyValueOfstringstringKeyValueOfstringstring.Key">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.ArrayOfKeyValueOfstringstringKeyValueOfstringstring.Value">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.BusinessWarningVo">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.BusinessErrors">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.BusinessErrors.ErrorList">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.TestingResultContract">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.TestingResultContract.Hasil">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.TestingWSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.TestingWSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.TestingWSCompletedEventArgs.result">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendSMSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendSMSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendSMSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendSMSCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendEmailCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendEmailCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendEmailCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendEmailCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendEmailMamiCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendEmailMamiCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendEmailMamiCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendEmailMamiCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendEmailImageCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendEmailImageCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendEmailImageCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendEmailImageCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendNotificationCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.EmailServiceModel.SendNotificationCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendNotificationCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.EmailServiceModel.SendNotificationCompletedEventArgs.output">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.PCFService">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.PCFServiceModel.PCFService.#ctor">
+<remarks/>
+</member>
+<member name="E:ConsCallPcf.PCFServiceModel.PCFService.CallAisResultCompleted">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.PCFServiceModel.PCFService.CallAisResult(System.String,System.String,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.PCFServiceModel.PCFService.CallAisResultAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.PCFServiceModel.PCFService.CallAisResultAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:ConsCallPcf.PCFServiceModel.PCFService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.BusinessErrors">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.BusinessErrors.ErrorList">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.BusinessErrorVo">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.BusinessErrorVo.ErrorCode">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.BusinessErrorVo.ErrorField">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.BusinessErrorVo.ErrorMessages">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.ArrayOfKeyValueOfstringstringKeyValueOfstringstring">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.ArrayOfKeyValueOfstringstringKeyValueOfstringstring.Key">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.ArrayOfKeyValueOfstringstringKeyValueOfstringstring.Value">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.BusinessWarningVo">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.CallAisResultCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:ConsCallPcf.PCFServiceModel.CallAisResultCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:ConsCallPcf.PCFServiceModel.CallAisResultCompletedEventArgs.result">
+<remarks/>
+</member>
+</members>
+</doc>

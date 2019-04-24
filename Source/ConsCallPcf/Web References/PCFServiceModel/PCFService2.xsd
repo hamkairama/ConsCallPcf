@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.244.33.13/PCF_Service_REH/PCFService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="BusinessErrors">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorList" nillable="true" type="tns:ArrayOfBusinessErrorVo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessErrors" nillable="true" type="tns:BusinessErrors" />
+  <xs:complexType name="ArrayOfBusinessErrorVo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BusinessErrorVo" nillable="true" type="tns:BusinessErrorVo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBusinessErrorVo" nillable="true" type="tns:ArrayOfBusinessErrorVo" />
+  <xs:complexType name="BusinessErrorVo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorField" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessages" nillable="true" type="q1:ArrayOfKeyValueOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessErrorVo" nillable="true" type="tns:BusinessErrorVo" />
+  <xs:complexType name="BusinessMessageContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessMessageContent" nillable="true" type="tns:BusinessMessageContent" />
+  <xs:complexType name="BusinessWarningVo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BusinessErrorVo">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BusinessWarningVo" nillable="true" type="tns:BusinessWarningVo" />
+</xs:schema>

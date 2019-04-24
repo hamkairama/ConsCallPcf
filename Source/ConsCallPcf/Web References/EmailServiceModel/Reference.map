@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd0" filename="MessageService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd3" filename="MessageService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd2" filename="MessageService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?wsdl" filename="MessageService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?disco" filename="MessageService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd4" filename="MessageService2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd1" filename="MessageService3.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

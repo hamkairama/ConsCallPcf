@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ConsCallPcf.Helpers
+</name>
+</assembly>
+<members>
+<member name="T:ConsCallPcf.Helpers.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ConsCallPcf.Helpers.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ConsCallPcf.Helpers.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:ConsCallPcf.Helpers.ListFieldNameAndValue.AddObject(System.Object,System.Object)">
+ <summary>
+ 
+ </summary>
+ <param name="_ObjectName"></param>
+ <param name="_Value"></param>
+</member>
+<member name="M:ConsCallPcf.Helpers.ListFieldNameAndValue.getKeybyId(System.Int32)">
+ <summary>
+ adding get object by object filter
+ </summary>
+ <param name="_id"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

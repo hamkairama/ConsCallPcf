@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MessageService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" />
+      <xsd:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" />
+      <xsd:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMessageService_TestingWS_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestingWS" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_TestingWS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestingWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendSMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendSMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendEmailMami_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailMami" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendEmailMami_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailMamiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendEmailImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailImage" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendEmailImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendNotification" />
+  </wsdl:message>
+  <wsdl:message name="IMessageService_SendNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendNotificationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMessageService">
+    <wsdl:operation name="TestingWS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/TestingWS" message="tns:IMessageService_TestingWS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/TestingWSResponse" message="tns:IMessageService_TestingWS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/SendSMS" message="tns:IMessageService_SendSMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/SendSMSResponse" message="tns:IMessageService_SendSMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/SendEmail" message="tns:IMessageService_SendEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/SendEmailResponse" message="tns:IMessageService_SendEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailMami">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/SendEmailMami" message="tns:IMessageService_SendEmailMami_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/SendEmailMamiResponse" message="tns:IMessageService_SendEmailMami_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/SendEmailImage" message="tns:IMessageService_SendEmailImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/SendEmailImageResponse" message="tns:IMessageService_SendEmailImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendNotification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMessageService/SendNotification" message="tns:IMessageService_SendNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMessageService/SendNotificationResponse" message="tns:IMessageService_SendNotification_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMessageService" type="tns:IMessageService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestingWS">
+      <soap:operation soapAction="http://tempuri.org/IMessageService/TestingWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/IMessageService/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap:operation soapAction="http://tempuri.org/IMessageService/SendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailMami">
+      <soap:operation soapAction="http://tempuri.org/IMessageService/SendEmailMami" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailImage">
+      <soap:operation soapAction="http://tempuri.org/IMessageService/SendEmailImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendNotification">
+      <soap:operation soapAction="http://tempuri.org/IMessageService/SendNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MessageService">
+    <wsdl:port name="BasicHttpBinding_IMessageService" binding="tns:BasicHttpBinding_IMessageService">
+      <soap:address location="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

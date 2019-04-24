@@ -1,0 +1,9 @@
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\bin\Debug\ConsCallPcf.Helpers.dll
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\bin\Debug\ConsCallPcf.Helpers.pdb
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\bin\Debug\ConsCallPcf.Helpers.xml
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\obj\Debug\ConsCallPcf.Helpers.vbprojResolveAssemblyReference.cache
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\obj\Debug\ConsCallPcf.Helpers.Resources.resources
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\obj\Debug\ConsCallPcf.Helpers.vbproj.GenerateResource.Cache
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\obj\Debug\ConsCallPcf.Helpers.dll
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\obj\Debug\ConsCallPcf.Helpers.xml
+D:\Hamka\ConsCallPcf_Project\ConsCallPcf.Helpers\obj\Debug\ConsCallPcf.Helpers.pdb

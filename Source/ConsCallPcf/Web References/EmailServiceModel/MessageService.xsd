@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" />
+  <xs:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" />
+  <xs:element name="TestingWS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="condition" nillable="true" type="q1:TestingContract" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="result" nillable="true" type="q2:TestingResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestingWSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" minOccurs="0" name="TestingWSResult" nillable="true" type="q3:BusinessErrors" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="result" nillable="true" type="q4:TestingResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendSMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="transaction" nillable="true" type="q5:SmsKeyContract" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q6:SmsResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendSMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" minOccurs="0" name="SendSMSResult" nillable="true" type="q7:BusinessErrors" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q8:SmsResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="transaction" nillable="true" type="q9:EmailContract" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q10:EmailResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" minOccurs="0" name="SendEmailResult" nillable="true" type="q11:BusinessErrors" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q12:EmailResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailMami">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="transaction" nillable="true" type="q13:EmailMamiContract" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q14:EmailResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailMamiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" minOccurs="0" name="SendEmailMamiResult" nillable="true" type="q15:BusinessErrors" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q16:EmailResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailImage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="transaction" nillable="true" type="q17:EmailImageContract" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q18:EmailResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailImageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" minOccurs="0" name="SendEmailImageResult" nillable="true" type="q19:BusinessErrors" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q20:EmailResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="transaction" nillable="true" type="q21:NotificationContract" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q22:NotificationResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendNotificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Manulife.Core.Model.Business" minOccurs="0" name="SendNotificationResult" nillable="true" type="q23:BusinessErrors" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" minOccurs="0" name="output" nillable="true" type="q24:NotificationResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

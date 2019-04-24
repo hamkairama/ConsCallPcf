@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Manulife.Id.PolicyAdmin.Interface" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://mlidev61/EsolDanamonDevNotificationWcf/MessageService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="TestingContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Input" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TestingContract" nillable="true" type="tns:TestingContract" />
+  <xs:complexType name="TestingResultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Hasil" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TestingResultContract" nillable="true" type="tns:TestingResultContract" />
+  <xs:complexType name="SmsKeyContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Recipient" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Vendor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkArea" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SmsKeyContract" nillable="true" type="tns:SmsKeyContract" />
+  <xs:complexType name="SmsResultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrxId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SmsResultContract" nillable="true" type="tns:SmsResultContract" />
+  <xs:complexType name="EmailContract">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AttachmentFile" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CcRecipient" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Recipient" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkArea" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailContract" nillable="true" type="tns:EmailContract" />
+  <xs:complexType name="EmailResultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailResultContract" nillable="true" type="tns:EmailResultContract" />
+  <xs:complexType name="EmailMamiContract">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AttachmentFile" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CcRecipient" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MessageID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Param" nillable="true" type="xs:string" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Recipient" nillable="true" type="q7:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkArea" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailMamiContract" nillable="true" type="tns:EmailMamiContract" />
+  <xs:complexType name="EmailImageContract">
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AttachmentFile" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CcRecipient" nillable="true" type="q9:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ImageList" nillable="true" type="tns:ArrayOfGetEmailImageContract" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Recipient" nillable="true" type="q10:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Sender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkArea" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailImageContract" nillable="true" type="tns:EmailImageContract" />
+  <xs:complexType name="ArrayOfGetEmailImageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetEmailImageContract" nillable="true" type="tns:GetEmailImageContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetEmailImageContract" nillable="true" type="tns:ArrayOfGetEmailImageContract" />
+  <xs:complexType name="GetEmailImageContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ImageLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetEmailImageContract" nillable="true" type="tns:GetEmailImageContract" />
+  <xs:complexType name="NotificationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Param" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificationContract" nillable="true" type="tns:NotificationContract" />
+  <xs:complexType name="NotificationResultContract">
+    <xs:sequence>
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DetailTrans" nillable="true" type="q11:ArrayOfstring" />
+      <xs:element minOccurs="0" name="RespondCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificationResultContract" nillable="true" type="tns:NotificationResultContract" />
+</xs:schema>
